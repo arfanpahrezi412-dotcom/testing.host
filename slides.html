@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun, Sayang!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d81b60;
+            --secondary-color: #fce4ec;
+            --text-color: #4a4a4a;
+            --dark-text: #2c3e50;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: var(--text-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Section 1: Ucapan Ulang Tahun */
+        #slide1 {
+            background-image: linear-gradient(to top, #fce4ec 0%, #ffc0cb 100%);
+        }
+        .birthday-header {
+            font-family: 'Dancing Script', cursive;
+            font-size: 10vw;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .message-text {
+            font-size: 5vw;
+            color: var(--dark-text);
+            padding: 0 15px;
+            max-width: 800px;
+        }
+
+        /* Section 2: Doa & Harapan */
+        #slide2 {
+            background-color: #e3f2fd;
+            background-image: linear-gradient(to bottom, #e3f2fd 0%, #bbdefb 100%);
+        }
+        .prayer-text {
+            font-size: 5.5vw;
+            color: var(--dark-text);
+            padding: 0 15px;
+            max-width: 800px;
+        }
+
+        /* Section 3: Galeri Foto */
+        #slide3 {
+            background-color: #f0f4f7;
+            padding: 60px 20px;
+        }
+        .gallery-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 8vw;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            width: 100%;
+            max-width: 900px;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photo-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Section 4: Google Drive Link */
+        #slide4 {
+            background-image: linear-gradient(to bottom, #e0f2f1 0%, #80cbc4 100%);
+            padding-bottom: 100px; /* Ruang ekstra untuk tombol */
+        }
+        .drive-heading {
+            font-family: 'Dancing Script', cursive;
+            font-size: 8vw;
+            color: var(--dark-text);
+            margin-bottom: 30px;
+        }
+        .drive-link {
+            font-size: 5vw;
+            color: white;
+            background-color: #2e7d32;
+            text-decoration: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .drive-link:hover {
+            transform: translateY(-5px);
+            background-color: #388e3c;
+        }
+
+        @media (min-width: 600px) {
+            .birthday-header { font-size: 60px; }
+            .message-text { font-size: 24px; }
+            .prayer-text { font-size: 28px; }
+            .gallery-title { font-size: 48px; }
+            .drive-heading { font-size: 48px; }
+            .drive-link { font-size: 28px; }
+            .photo-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section" id="slide1">
+        <h1 class="birthday-header">Happy Birthday, sayanggkuu!</h1>
+        <p class="message-text">Selamat ulang tahun untuk pacar yang paling kusayangi. Hari ini adalah hari spesial buat ayang, dan aku berharap kebahagiaan selalu ada buat sayang. Terima kasih sudah menjadi wanita terindah dalam hidupku. Aku bangga banget sama ayang!</p>
+    </section>
+
+    <section class="section" id="slide2">
+        <h2 class="prayer-text">Doa dan Harapanku</h2>
+        <p class="prayer-text">Semoga di usia baru ini, sayang selalu diberikan kesehatan, kebahagiaan, dan kesuksesan. Semoga semua impianmu tercapai, dan kita bisa terus bersama-sama melewati setiap hari. Tetaplah menjadi perempuan yang baik dan penuh kasih. Aku selalu ada di sisi sayang.</p>
+    </section>
+
+    <section class="section" id="slide3">
+        <h2 class="gallery-title">Kenangan Indah Kita</h2>
+        <div class="photo-grid">
+            <img src="foto1.jpg" alt="Foto kenangan 1">
+            <img src="foto2.jpg" alt="Foto kenangan 3">
+            <img src="foto3.jpg" alt="Foto kenangan 4">
+            <img src="foto4.jpg" alt="Foto kenangan 5">
+            <img src="foto6.jpg" alt="Foto kenangan 6">
+            <img src="foto5.jpg" alt="Foto kenangan 2">
+            </div>
+    </section>
+
+    <section class="section" id="slide4">
+        <h2 class="drive-heading">Ada hadiah spesial untuk sayang!</h2>
+        <a href="https://drive.google.com/file/d/12zd_Jp-YWqmA8KPA_U4Khi-HCIcoZR3Z/view?usp=drive_link" class="drive-link" target="_blank">Klik ini yaa sayang!</a>
+        <p style="margin-top: 20px; font-size: 4vw; color: #555;">(dilihat sampai habis yaa sayang, kualitasnya dibagusin yaa)</p>
+    </section>
+
+</body>
+</html>
